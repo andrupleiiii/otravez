@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café de Especialidad - Mi Cafetería</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <a href="#">MiCafé</a>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#productos">Cafés</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li>
+                    <a href="#" id="ver-carrito-btn" class="carrito-btn">
+                        🛒 Carrito <span id="carrito-contador">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>El Arte de un Buen Café</h1>
+                <p>Descubre granos seleccionados de las mejores fincas del mundo, tostados para ti.</p>
+                <a href="#productos" class="btn">Explorar Cafés</a>
+
+           
+            </div>
+        </section>
+
+        <section id="productos" class="container">
+            <h2 class="section-title">Nuestra Selección</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1559493233-1469a35aa2c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDN8fGNvZmZlZSUyMGJlYW5zJTIwcGFja2FnfGVufDB8fHx8MTY3ODg4MzU0MA&ixlib=rb-4.0.3&q=80&w=400" alt="Café de Etiopía">
+                    <div class="product-info">
+                        <h3>Etiopía Yirgacheffe</h3>
+                        <p class="product-description">Notas florales y cítricas con un cuerpo ligero y brillante.</p>
+                        <span class="product-price">15,00 €</span>
+                        <button class="btn-product">Añadir al carrito</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1608682520293-e4a73f4435ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDEyfHxjYWZlJTIwZGUlMjBjb2xvbWJpYXxlbnwwfHx8fDE2Nzg4ODM2MTA&ixlib=rb-4.0.3&q=80&w=400" alt="Café de Colombia">
+                    <div class="product-info">
+                        <h3>Colombia Supremo</h3>
+                        <p class="product-description">Sabor balanceado con notas de nuez y chocolate.</p>
+                        <span class="product-price">12,50 €</span>
+                        <button class="btn-product">Añadir al carrito</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1599160533833-8a3c3f3a7a4f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDV8fGNvZmZlZSUyMGJlYW5zJTIwaW5kb25lc2lhfGVufDB8fHx8MTY3ODg4MzY1Mw&ixlib=rb-4.0.3&q=80&w=400" alt="Café de Sumatra">
+                    <div class="product-info">
+                        <h3>Sumatra Mandheling</h3>
+                        <p class="product-description">Cuerpo completo, baja acidez y un distintivo sabor terroso.</p>
+                        <span class="product-price">14,00 €</span>
+                        <button class="btn-product">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="nosotros" class="about-section">
+            <div class="container about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Nuestra Pasión</h2>
+                    <p>En MiCafé, viajamos por el mundo para encontrar los granos más excepcionales. Creemos que cada taza de café cuenta una historia, desde la finca hasta tu hogar. Nuestro compromiso es con la calidad, la sostenibilidad y el comercio justo, asegurando que disfrutes de la mejor experiencia posible mientras apoyamos a las comunidades cafetaleras.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1525087747209-8f19b84c9a1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fGNvZmZlZSUyMHNob3AlMjBvd25lcnxlbnwwfHx8fDE2Nzg4ODM3MTU&ixlib=rb-4.0.3&q=80&w=500" alt="Dueño de la cafetería">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 MiCafé. Creado con pasión en Barcelona, Anzoátegui.</p>
+        </div>
+    </footer>
+
+    <div id="carrito-sidebar" class="carrito-sidebar">
+        <button id="cerrar-carrito-btn" class="cerrar-carrito-btn">&times;</button>
+        <h2>Tu Carrito</h2>
+        <div id="carrito-items" class="carrito-items">
+            </div>
+        <div class="carrito-footer">
+            <h3>Total: <span id="carrito-total">0,00 €</span></h3>
+            <button class="btn vaciar-btn" id="vaciar-carrito-btn">Vaciar Carrito</button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
